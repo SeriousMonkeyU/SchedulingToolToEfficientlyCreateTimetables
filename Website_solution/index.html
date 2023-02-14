@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/headerAndFooter.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>VIA study planning</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-md navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo of VIA" width="215" height="62"></a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-around" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a class="nav-link active mx-xl-4 mx-md-2 " aria-current="page"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/RWD.html">RWD</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/SDJ.html">SDJ</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/DMA.html">DMA</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/SEP.html">SEP</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-xl mt-5 content">
+        <div class="row pt-xl-5 pt-3">
+            <div class="col-md-6 col-xl-8 d-none d-xl-inline-block">
+
+                <!-- Carousel -->
+                <div id="pics" class="carousel slide " data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#pics" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#pics" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#pics" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#pics" data-bs-slide-to="3"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <img src="images/chess-carousel.jpg" alt="Chess night at VIA poster" class="d-block ">
+                            <div class="carousel-caption">
+                                <h3>Chess event at VIA!</h3>
+                                <p>Participation is free.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/autumn-carousel.jpg" alt="Autumn view" class="d-block ">
+                            <div class="carousel-caption">
+                                <h3>The autumn season is here!</h3>
+                                <p>Enjoy beatiful danish autumn and drink hot tea</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/schedule-carousel.png" alt="Schedule for week 43" class="d-block ">
+                            <div class="carousel-caption">
+                                <h3>Find your schedule!</h3>
+                                <p>All of the schedules are already uploaded :)</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/smoke-carousel.png" alt="Smoking is banned poster" class="d-block mx-auto">
+                            <div class="carousel-caption">
+                                <h3>No smoking!</h3>
+                                <p>It is not allowed to smoke in VIA area.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#pics" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#pics" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-xl-none text-center">
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <hr class="d-sm-none">
+                        <img class="img-fluid rounded mb-3" src="images/chess.jpg" alt="Chess night at VIA poster">
+                        <p class="darkText">Take part in the chess night at VIA!</p>
+                        <p class="darkText">Everyone is welcome no matter their level of experience in chess.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="d-sm-none">
+                        <img class="img-fluid rounded mb-3 mb-md-5" src="images/schedule.png"
+                            alt="Schedule for week 43">
+                        <p class="darkText">The schedule for week 43 is already uploaded on the
+                            website!</p>
+                        <p class="darkText">Responsive schedule is still in work but it should be there soon.
+                        </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <hr class="d-sm-none">
+                        <img class="img-fluid rounded mb-3" src="images/smoke.png" alt="Smoking is banned poster">
+                        <p class="darkText">Smoking is forbidden at campus!</p>
+                        <p class="darkText">If you want to smoke please leave the area of the campus.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <hr class="d-sm-none">
+                        <img class="img-fluid rounded mb-3 mb-md-4" src="images/autumn.jpg" alt="Autumn view">
+                        <p class="darkText">The autumn season is here!</p>
+                        <p class="darkText">Enjoy beatiful danish autumn and drink hot tea.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 order-first order-xl-last col-xl-4 text-center mb-5">
+
+                <img src="images/campus.jpg" class="rounded d-block mx-auto img-fluid " alt="Via new campus">
+                <h4 class="mt-5 pt-2">Welcome to Via study planning website!</h4>
+                <p class="darkText ">The purpose of this website to allow new students and teachers find relevant
+                    informations faster.</p>
+                <p class="darkText ">Use navigation bar to see info about specific courses and the schedule itself or to
+                    contact us.</p>
+                <p class="darkText d-xl-none">You can see all highlighted informations <span
+                        class="d-none d-sm-inline">the right side of this page</span> <span
+                        class="d-sm-none">below</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid fixed-bottom " id="footer">
+        <div class="row align-items-center">
+            <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start ps-sm-5">
+                <a class="mx-3" href="https://www.facebook.com/VIAUniversityCollegeInternational/"
+                    target="_blank">Facebook</a>
+                <a class="mx-3" href="https://twitter.com/viauniversity" target="_blank">Twitter</a>
+                <a class="mx-3" href="https://www.instagram.com/viauniversitycollege/" target="_blank">Instagram</a>
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center">
+                &copy;Group5 2021
+            </div>
+            <div class="col-sm-4 d-none d-sm-flex justify-content-center">
+
+                <a href="contacts.html">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

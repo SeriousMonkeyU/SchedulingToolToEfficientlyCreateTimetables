@@ -1,0 +1,11 @@
+ALHE,alhe@via.dk,SDJX,SEPX
+SVA,sva@via.dk,SDJY,SDJZ,SEPY,SEPZ
+KLAB,klab@via.dk,SDJZ
+MIVI,mivi@via.dk,SDJDK,SEPDK
+KASR,kasr@via.dk,RWDX
+LILE,lile@via.dk,RWDY,RWDZ
+AHAN,ahan@via.dk,RWDDK,SEPDK
+RIB,rib@via.dk,DMAX,DMAY
+IOOD,iood@via.dk,DMAZ,DMADK
+MWA,mwa@via.dk,SEPX,SEPY,SEPZ
+HEKP,hekp@via.dk,SEPX

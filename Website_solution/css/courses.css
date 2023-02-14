@@ -1,0 +1,49 @@
+
+ol {
+    list-style: inside;
+
+}
+
+h1 {
+    font-size: 6ex;
+    text-align: center;
+    color: #EF8354;
+    text-shadow: 4px 4px 4px black;
+    padding-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4ex;
+    text-shadow: 2px 2px 1px black;
+}
+
+h3 {
+    font-size: 3ex;
+    text-shadow: 1px 1px 1px black;
+}
+
+.outer {
+    background-color: #4F5D75;
+    border: 1px solid #2D3142;
+    border-radius: 10px;
+    line-height: 3.7ex;
+}
+
+.containerE {
+    background-color: #2D3142;
+    border: 1px solid #4F5D75;
+    border-radius: 10px;
+}
+
+
+.fontColor {
+    color: #EF8354;
+}
+
+.nameTeacher {
+    color: #EF8354;
+    text-shadow: 1px 1px 2px black;
+    font-size: 3ex;
+}
+

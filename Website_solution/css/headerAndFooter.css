@@ -1,0 +1,68 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body, html
+{
+    padding: 0;
+    margin: 0;
+    background-color: #e5ebf5;
+
+}
+
+.navbar
+{
+    background-color: #4F5D75;
+
+}
+
+.nav-link
+{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active
+{
+    color: #EF8354;
+    font-weight: bold;
+
+}
+
+#footer
+{
+    background-color: #4F5D75;
+
+}
+
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+
+#footer a:hover{
+    opacity: 0.5;
+}
+
+.content
+{
+    padding-bottom: 4rem;
+}
+
+.darkText
+{
+    color: #2d3142;
+}
+
+hr
+{
+    border: 2px solid black;
+}
+
+.carousel-caption
+{
+    color: orange;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+}

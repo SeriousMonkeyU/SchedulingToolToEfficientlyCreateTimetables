@@ -1,0 +1,16 @@
+button.btn {
+    background: #EF8354;
+    color: #fff;
+}
+
+button.btn:hover {
+    background: #EF8354;
+    color: #fff;
+    border: 0px;
+    opacity: 0.8;
+}
+
+#previousWeek
+{
+    margin-right: 25vw;
+}

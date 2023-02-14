@@ -1,0 +1,36 @@
+.center {
+      margin-left: 15%;
+      margin-right: 15%;
+      font-weight: bold;
+} 
+
+.center input {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #EF8354;
+  padding: 0;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  box-shadow: none;
+  height: 46px;
+  border-radius: 0px;
+  }
+
+button.btn {
+    width: 100%;
+    background: #EF8354;
+    font-size: 20px;
+    padding: 11px;
+    color: #fff;
+    border: 0px;
+    margin: 10px 0px 50px;
+}
+
+
+
+.texcolor
+{
+  color: #212529;
+}
+

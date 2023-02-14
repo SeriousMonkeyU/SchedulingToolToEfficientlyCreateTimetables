@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="601.0" userData="Assign/unassign teacher to course" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TeacherToCourseViewController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" StackPane.alignment="CENTER">
+      <Label layoutX="114.0" layoutY="22.0" prefHeight="53.0" prefWidth="425.0" text="Assign / unassign teacher" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="230.0" layoutY="321.0" mnemonicParsing="false" onAction="#unassignFromCourseButtonPressed" prefHeight="35.0" prefWidth="151.0" text="Unassign from course">
+         <font>
+            <Font name="Apple Color Emoji" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="372.0" layoutY="674.0" mnemonicParsing="false" onAction="#assignToCourseButtonPressed" prefHeight="35.0" prefWidth="121.0" text="Assign to course">
+         <font>
+            <Font name="Apple Color Emoji" size="13.0" />
+         </font>
+      </Button>
+      <VBox layoutX="105.0" layoutY="99.0" prefHeight="181.0" prefWidth="395.0">
+         <children>
+            <TableView fx:id="courseListTable" prefHeight="181.0" prefWidth="395.0">
+              <columns>
+                <TableColumn fx:id="semesterColumn" prefWidth="83.0" text="Semester" />
+                  <TableColumn fx:id="classLetterColumn" prefWidth="93.0" text="Class letter" />
+                  <TableColumn fx:id="courseNameColumn" prefWidth="135.0" text="Course name" />
+                  <TableColumn fx:id="ectsColumn" prefWidth="73.0" text="ECTS" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button layoutX="109.0" layoutY="674.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="35.0" prefWidth="86.0" text="Back">
+         <font>
+            <Font name="Apple Color Emoji" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="31.0" layoutY="635.0" prefHeight="18.0" prefWidth="530.0" style="-fx-color: red;" text="Error Label" textFill="#fa1919" />
+      <Label layoutX="131.0" layoutY="406.0" text="Selected teacher:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="teacherLabel" layoutX="264.0" layoutY="406.0" prefHeight="21.0" prefWidth="287.0" text="SVA - Stefen">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="509.0" text="Find the course:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="551.0" text="Semester">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="283.0" layoutY="551.0" text="Course name">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ChoiceBox fx:id="semesterList" layoutX="200.0" layoutY="548.0" prefHeight="27.0" prefWidth="61.0" />
+      <TextField fx:id="courseField" layoutX="389.0" layoutY="549.0" prefHeight="26.0" prefWidth="87.0" />
+      <Label layoutX="38.0" layoutY="473.0" text="To assign selected teacher to a specific course, please fill out the semester and course name down below.">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+      <Label layoutX="85.0" layoutY="290.0" text="To unassign teacher from a course, select the row and click the button &quot;Unassign from course&quot;">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="599.0" text="Click &quot;Assign to course&quot; when you are done with selections.">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Line endX="189.0" layoutX="300.0" layoutY="439.0" startX="-183.5" />
+      </Pane>
+   </children>
+</StackPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="439.0" userData="Select room" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddSessionStep2ViewController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="486.0" prefWidth="450.0" StackPane.alignment="CENTER">
+      <Label layoutX="82.0" layoutY="14.0" prefHeight="53.0" prefWidth="275.0" text="Available rooms" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="277.0" layoutY="451.0" mnemonicParsing="false" onAction="#reserveButtonPressed" prefHeight="35.0" prefWidth="86.0" text="Reserve">
+         <font>
+            <Font name="Apple Color Emoji" size="13.0" />
+         </font>
+      </Button>
+      <VBox alignment="BOTTOM_LEFT" layoutX="93.0" layoutY="175.0" prefHeight="174.0" prefWidth="253.0">
+         <children>
+            <TableView fx:id="roomListTable" prefHeight="174.0" prefWidth="253.0">
+              <columns>
+                  <TableColumn fx:id="roomColumn" prefWidth="165.60003662109375" text="Room" />
+                  <TableColumn fx:id="capacityColumn" prefWidth="88.80000305175781" text="Capacity" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Button layoutX="76.0" layoutY="451.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="35.0" prefWidth="86.0" text="Back">
+         <font>
+            <Font name="Apple Color Emoji" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="7.0" layoutY="371.0" prefHeight="35.0" prefWidth="420.0" style="-fx-color: red;" text="Error Label" textAlignment="CENTER" textFill="#fa1919" wrapText="true" />
+      <Label fx:id="sizeLabel" alignment="CENTER" layoutX="20.0" layoutY="416.0" prefHeight="18.0" prefWidth="399.0" text="Random Text Displayed for the user" wrapText="true" />
+      <Label layoutX="57.0" layoutY="76.0" text="You want to book a room for these selections:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="sessionLabel" alignment="CENTER" layoutX="24.0" layoutY="106.0" prefHeight="17.0" prefWidth="391.0" text="Date: 2/12/2021 Time: 8:20-11:50 Class:1Y  Course: DMA Length: 3" wrapText="true" />
+      <Line endX="100.0" layoutX="219.0" layoutY="136.0" startX="-100.0" />
+      </Pane>
+   </children>
+</StackPane>

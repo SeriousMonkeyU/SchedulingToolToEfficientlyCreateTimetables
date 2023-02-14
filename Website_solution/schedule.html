@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/headerAndFooter.css">
+    <link rel="stylesheet" href="css/schedule.css">
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Schedule</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo of VIA" width="215" height="62"></a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-around" id="myNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2 " aria-current="page"
+                            href="index.html">Home</a></li>
+                    <li class="nav-item "><a class="nav-link active mx-xl-4 mx-md-2" href="schedule.html">Schedule</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/RWD.html">RWD</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/SDJ.html">SDJ</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/DMA.html">DMA</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="courses/SEP.html">SEP</a></li>
+                    <li class="nav-item "><a class="nav-link mx-xl-4 mx-md-2" href="contacts.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg mt-5 ">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center mb-3">Student filters</h3>
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                            <input class="form-control" type="text" name="weekNumber" id="weekNumberStudent" placeholder="Week number: ">
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <select class="form-select" name="studentClass" id="studentClass">
+                            <option value="" selected disabled>Select a class</option>
+                            <option value="1X">1X</option>
+                            <option value="1Y">1Y</option>
+                            <option value="1Z">1Z</option>
+                            <option value="1DK">1DK</option>
+                            <option value="2X">2X</option>
+                            <option value="2Y">2Y</option>
+                            <option value="2Z">2Z</option>
+                            <option value="2DK">2DK</option>
+                            <option value="3X">3X</option>
+                            <option value="3Y">3Y</option>
+                            <option value="3Z">3Z</option>
+                            <option value="3DK">3DK</option>
+                            <option value="4X">4X</option>
+                            <option value="4Y">4Y</option>
+                            <option value="4Z">4Z</option>
+                            <option value="4DK">4DK</option>
+                            <option value="5X">5X</option>
+                            <option value="5Y">5Y</option>
+                            <option value="5Z">5Z</option>
+                            <option value="5DK">5DK</option>
+                            <option value="6X">6X</option>
+                            <option value="6Y">6Y</option>
+                            <option value="6Z">6Z</option>
+                            <option value="6DK">6DK</option>
+                            <option value="7X">7X</option>
+                            <option value="7Y">7Y</option>
+                            <option value="7Z">7Z</option>
+                            <option value="7DK">7DK</option>
+
+                        </select>
+                    </div>
+                    <div class="col-lg-3 mb-5 d-flex justify-content-center justify-content-lg-start"><button class="btn" type="submit" id="filterStudent">Filter schedule</button></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center mb-3">Teacher filters</h3>
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                            <input class="form-control " type="text" name="weekNumber" id="weekNumberTeacher" placeholder="Week number: ">
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <input class="form-control " type="text" name="teacherInitials" id="teacherInitials" placeholder="Teacher id: ">
+                    </div>
+                    <div class="col-lg-3 mb-3 d-flex justify-content-center justify-content-lg-start"><button class="btn" type="submit" id="filterTeacher">Filter schedule</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-3">
+        Previous week
+        <button type="button" class="btn ms-2" id="previousWeek">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+              </svg>
+        </button>
+
+        <button type="button" class="btn me-2" id="nextWeek">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+              </svg>
+          </button>
+          Next week
+    </div>
+    
+
+    <div class="container-lg d-none d-sm-table mt-5 pt-4 pb-5">
+        <div class="table-responsive-lg">
+            <table class="table table-bordered border-dark align-middle text-center">
+                <thead>
+                    <tr>
+                        <th scope="col" rowspan="2" class="align-middle">Week</th>
+                        <th scope="col" rowspan="2" class="align-middle">Time</th>
+                        <th scope="col" class="Monday date"></th>
+                        <th scope="col" class="Tuesday date"></th>
+                        <th scope="col" class="Wednesday date"></th>
+                        <th scope="col" class="Thursday date"></th>
+                        <th scope="col" class="Friday date"></th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="8" class="weekNumber"></th>
+                        <td>8:20 - 9:05</td>
+                        <td class="Monday 8  border-dark"></td>
+                        <td class="Tuesday 8  border-dark"></td>
+                        <td class="Wednesday 8  border-dark"></td>
+                        <td class="Thursday 8  border-dark"></td>
+                        <td class="Friday 8  border-dark"></td>
+                    </tr>
+                    <tr>
+                        <td>9:15 - 10:00</td>
+                        <td class="Monday 9  border-dark"></td>
+                        <td class="Tuesday 9  border-dark"></td>
+                        <td class="Wednesday 9  border-dark"></td>
+                        <td class="Thursday 9  border-dark"></td>
+                        <td class="Friday 9  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <td>10:10 - 10:55</td>
+                        <td class="Monday 10  border-dark"></td>
+                        <td class="Tuesday 10  border-dark"></td>
+                        <td class="Wednesday 10 border-dark"></td>
+                        <td class="Thursday 10  border-dark"></td>
+                        <td class="Friday 10  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <td>11:05 - 11:50</td>
+                        <td class="Monday 11  border-dark"></td>
+                        <td class="Tuesday 11  border-dark"></td>
+                        <td class="Wednesday 11  border-dark"></td>
+                        <td class="Thursday 11  border-dark"></td>
+                        <td class="Friday 11  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <td>12:45 - 13:30</td>
+                        <td class="Monday 12  border-dark"></td>
+                        <td class="Tuesday 12  border-dark"></td>
+                        <td class="Wednesday 12  border-dark"></td>
+                        <td class="Thursday 12 border-dark"></td>
+                        <td class="Friday 12 border-dark"></td>
+                    </tr>
+                    <tr>
+                        <td>13:35 - 14:25</td>
+                        <td class="Monday 13  border-dark"></td>
+                        <td class="Tuesday 13  border-dark"></td>
+                        <td class="Wednesday 13  border-dark"></td>
+                        <td class="Thursday 13  border-dark"></td>
+                        <td class="Friday 13  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <td>14:30 - 15:15</td>
+                        <td class="Monday 14  border-dark"></td>
+                        <td class="Tuesday 14  border-dark"></td>
+                        <td class="Wednesday 14  border-dark"></td>
+                        <td class="Thursday 14  border-dark"></td>
+                        <td class="Friday 14 border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <td>15:20 - 16:05</td>
+                        <td class="Monday 15  border-dark"></td>
+                        <td class="Tuesday 15  border-dark"></td>
+                        <td class="Wednesday 15 border-dark"></td>
+                        <td class="Thursday 15  border-dark"></td>
+                        <td class="Friday 15  border-dark"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="container-fluid d-sm-none mt-5 pt-4 pb-5">
+        <div class="table-responsive">
+            <table class="table table-bordered border-dark align-middle text-center">
+                <tbody>
+                    <tr>
+                        <th scope="row" colspan="2">Week</th>
+                        <th class="weekNumber" colspan="8"></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" colspan="2">Time</th>
+                        <td>8:20 - 9:05</td>
+                        <td>9:15 - 10:00</td>
+                        <td>10:10 - 10:55</td>
+                        <td>11:05 - 11:50</td>
+                        <td>12:45 - 13:30</td>
+                        <td>13:35 - 14:25</td>
+                        <td>14:30 - 15:15</td>
+                        <td>15:20 - 16:05</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="Monday date"></th>
+                        <th>Monday</th>
+                        <td class="Monday 8 border-dark"></td>
+                        <td class="Monday 9  border-dark"></td>
+                        <td class="Monday 10  border-dark"></td>
+                        <td class="Monday 11  border-dark"></td>
+                        <td class="Monday 12  border-dark"></td>
+                        <td class="Monday 13  border-dark"></td>
+                        <td class="Monday 14  border-dark"></td>
+                        <td class="Monday 15  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" class="Tuesday date"></th>
+                        <th >Tuesday</th>
+                        <td class="Tuesday 8 border-dark"></td>
+                        <td class="Tuesday 9  border-dark"></td>
+                        <td class="Tuesday 10  border-dark"></td>
+                        <td class="Tuesday 11  border-dark"></td>
+                        <td class="Tuesday 12  border-dark"></td>
+                        <td class="Tuesday 13  border-dark"></td>
+                        <td class="Tuesday 14  border-dark"></td>
+                        <td class="Tuesday 15  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" class="Wednesday date"></th>
+                        <th >Wednesday</th>
+                        <td class="Wednesday 8  border-dark"></td>
+                        <td class="Wednesday 9  border-dark"></td>
+                        <td class="Wednesday 10  border-dark"></td>
+                        <td class="Wednesday 11  border-dark"></td>
+                        <td class="Wednesday 12  border-dark"></td>
+                        <td class="Wednesday 13  border-dark"></td>
+                        <td class="Wednesday 14  border-dark"></td>
+                        <td class="Wednesday 15  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" class="Thursday date"></th>
+                        <th >Thursday</th>
+                        <td class="Thursday 8  border-dark"></td>
+                        <td class="Thursday 9  border-dark"></td>
+                        <td class="Thursday 10  border-dark"></td>
+                        <td class="Thursday 11  border-dark"></td>
+                        <td class="Thursday 12  border-dark"></td>
+                        <td class="Thursday 13  border-dark"></td>
+                        <td class="Thursday 14  border-dark"></td>
+                        <td class="Thursday 15  border-dark"></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row" class="Friday date"></th>
+                        <th >Friday</th>
+                        <td class="Friday 8  border-dark"></td>
+                        <td class="Friday 9  border-dark"></td>
+                        <td class="Friday 10  border-dark"></td>
+                        <td class="Friday 11  border-dark"></td>
+                        <td class="Friday 12  border-dark"></td>
+                        <td class="Friday 13  border-dark"></td>
+                        <td class="Friday 14  border-dark"></td>
+                        <td class="Friday 15  border-dark"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid fixed-bottom " id="footer">
+        <div class="row align-items-center">
+            <div class="col-sm-6 d-flex justify-content-center justify-content-sm-start ps-sm-5">
+                <a class="mx-3" href="https://www.facebook.com/VIAUniversityCollegeInternational/"
+                    target="_blank">Facebook</a>
+                <a class="mx-3" href="https://twitter.com/viauniversity" target="_blank">Twitter</a>
+                <a class="mx-3" href="https://www.instagram.com/viauniversitycollege/" target="_blank">Instagram</a>
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center">
+                &copy;Group5 2021
+            </div>
+            <div class="col-sm-4 d-none d-sm-flex justify-content-center">
+
+                <a href="contacts.html">Contact us</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
